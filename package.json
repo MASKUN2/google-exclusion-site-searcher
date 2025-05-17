@@ -1,8 +1,8 @@
 {
-  "name": "${PROJECT_NAME}",
+  "name": "exlustion-site-searcher",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "popup.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

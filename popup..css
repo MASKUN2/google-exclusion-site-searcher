@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, sans-serif; /* 좀 더 일반적인 폰트로 변경 */
+  width: 380px; /* 이미지와 유사하게 너비 조정 */
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: #f4f4f4; /* 약간의 배경색 추가 */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input-group label {
+  font-weight: bold;
+  font-size: 0.9em;
+  color: #555;
+}
+
+input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.button-group {
+  display: flex;
+  gap: 8px; /* 버튼 사이 간격 */
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff; /* 기본 버튼 색상 */
+  color: white;
+  cursor: pointer;
+  font-size: 0.9em;
+  flex-grow: 1; /* 버튼들이 공간을 균등하게 차지하도록 */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#addDomainButton {
+  background-color: #28a745; /* 추가 버튼 색상 (녹색 계열) */
+}
+#addDomainButton:hover {
+  background-color: #1e7e34;
+}
+
+#useCurrentButton {
+  background-color: #17a2b8; /* 현재 사이트 사용 버튼 색상 (청록 계열) */
+}
+#useCurrentButton:hover {
+  background-color: #117a8b;
+}
+
+#excludedSitesList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-height: 150px; /* 목록이 너무 길어지면 스크롤바 생성 */
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  background-color: white;
+  border-radius: 4px;
+}
+
+#excludedSitesList li {
+  padding: 8px 10px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+#excludedSitesList li:last-child {
+  border-bottom: none;
+}
+
+#excludedSitesList .delete-button {
+  background-color: #dc3545; /* 삭제 버튼 색상 (빨간색 계열) */
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 0.8em;
+}
+
+#excludedSitesList .delete-button:hover {
+  background-color: #c82333;
+}
+
+.search-button {
+  background-color: #5a6268; /* 검색 버튼 색상 (회색 계열) */
+  font-weight: bold;
+  padding: 10px;
+}
+
+.search-button:hover {
+  background-color: #474c52;
+}

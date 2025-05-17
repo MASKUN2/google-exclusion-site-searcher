@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "사이트 제외 검색 도우미",
+  "version": "1.0",
+  "description": "Google 검색 시 특정 사이트를 쉽게 제외하고 검색할 수 있도록 도와주는 확장 프로그램입니다.",
+  "permissions": [
+    "storage",
+    "tabs",
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "32": "images/icon32.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  }
+}
